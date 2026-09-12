@@ -114,7 +114,7 @@ ABOUT PAGE
 <img width="1024" height="1536" alt="WhatsApp Image 2026-09-12 at 9 20 55 AM" src="https://github.com/user-attachments/assets/abb25513-dd39-42cd-84da-600244ceffce" />
 
 # Project Demo
-
+ https://vismaya404.github.io/Halwa-Mathicurry/
 # Video
 
 # Team contributions
