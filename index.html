@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Halwa & Mathicurry</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         FLOATING BACKGROUND FOOD
+    ====================================== -->
+
+    <div class="floating-foods">
+
+        <span>🌴</span>
+        <span>🥥</span>
+        <span>🌶️</span>
+        <span>🍌</span>
+        <span>🍚</span>
+        <span>🌿</span>
+        <span>🥭</span>
+        <span>🌴</span>
+        <span>🥥</span>
+        <span>🌶️</span>
+
+    </div>
+
+
+
+    <!-- =====================================
+         MAIN WEBSITE
+    ====================================== -->
+
+    <main class="main-container">
+
+
+        <!-- =================================
+             NAVIGATION
+        ================================== -->
+
+        <nav class="navbar">
+
+            <div class="brand">
+
+                <div class="brand-image">
+                    <img src="halwa.jpg" alt="Halwa and Mathicurry">
+                </div>
+
+                <span>
+                    Halwa & Mathicurry
+                </span>
+
+            </div>
+
+
+            <div class="nav-links">
+
+                <a href="#home"
+                    class="active">
+                    Home
+                </a>
+
+                <a href="#analyzer">
+                    Analyze
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- =================================
+             HERO SECTION
+        ================================== -->
+
+        <section id="home"
+            class="hero-section">
+
+
+            <!-- Realistic food background -->
+
+            <div class="hero-image">
+
+                <img src="halwa.jpg"
+                    alt="Realistic Halwa and Mathicurry">
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+
+
+            <!-- Hero content -->
+
+            <div class="hero-content">
+
+                <div class="main-food-logo">
+
+                    <img src="halwa.jpg"
+                        alt="Halwa and Mathicurry">
+
+                </div>
+
+
+                <p class="mini-heading">
+                    THE MOST USELESS FOOD ANALYZER
+                </p>
+
+
+                <h1>
+
+                    HALWA
+                    <span>&</span>
+                    MATHICURRY
+
+                </h1>
+
+
+                <p class="hero-subtitle">
+
+                    Give us a food.
+                    We'll give you a
+                    <strong>weird combination!</strong>
+
+                </p>
+
+
+                <div class="hero-decoration">
+
+                    🍰 ❌ 🐟
+                    <span>→</span>
+                    🤯
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             ANALYZER
+        ================================== -->
+
+        <section id="analyzer"
+            class="analyzer-section">
+
+
+            <div class="analyzer-card">
+
+
+                <div class="analyzer-heading">
+
+                    <span>🍽️</span>
+
+                    <div>
+
+                        <h2>
+                            What are you eating?
+                        </h2>
+
+                        <p>
+                            Enter a food and prepare
+                            for culinary chaos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="input-area">
+
+                    <input
+                        type="text"
+                        id="foodInput"
+                        placeholder="Try: Halwa"
+                        autocomplete="off"
+                    >
+
+
+                    <button
+                        id="weirdButton"
+                        onclick="analyzeFood()">
+
+                        🤪
+                        MAKE IT WEIRD!
+
+                    </button>
+
+                </div>
+
+
+                <p id="errorMessage"
+                    class="error-message">
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             RESULT
+        ================================== -->
+
+        <section id="resultSection"
+            class="result-section">
+
+
+            <div class="result-card">
+
+
+                <div class="result-title">
+
+                    <span>
+                        ✨ FOOD ANALYSIS ✨
+                    </span>
+
+                </div>
+
+
+
+                <!-- Food comparison -->
+
+                <div class="comparison">
+
+
+                    <!-- YOUR FOOD -->
+
+                    <div class="food-box">
+
+                        <p class="label">
+                            YOUR FOOD
+                        </p>
+
+
+                        <div class="food-photo">
+
+                            <img
+                                id="yourFoodImage"
+                                src="aluva.jpg"
+                                alt="Food">
+
+                        </div>
+
+
+                        <h2 id="foodName">
+                            Halwa
+                        </h2>
+
+                    </div>
+
+
+
+                    <!-- Arrow -->
+
+                    <div class="big-arrow">
+
+                        <span>→</span>
+
+                        <small>
+                            WHY?!
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- WEIRD COMBINATION -->
+
+                    <div class="food-box weird-box">
+
+                        <p class="label weird-label">
+                            WEIRD COMBINATION
+                        </p>
+
+
+                        <div class="food-photo combination-photo">
+
+                            <img
+                                id="combinationImage"
+                                src="mathi.jpg"
+                                alt="Halwa and Mathicurry">
+
+                        </div>
+
+
+                        <h2 id="weirdFoodName">
+                            Mathi Curry
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     AMMA APPROVED
+                ================================== -->
+
+                <div class="amma-card">
+
+
+                    <div class="amma-photo">
+
+                        <div class="amma-emoji">
+                            👩‍🍳
+                        </div>
+
+                    </div>
+
+
+                    <div class="amma-content">
+
+                        <div class="amma-title">
+
+                            <span>👑</span>
+
+                            <div>
+
+                                <h2>
+                                    AMMA APPROVED™
+                                </h2>
+
+                                <p>
+                                    Official Amma Food Department
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="speech-bubble">
+
+                            <span class="quote">
+                                “
+                            </span>
+
+
+                            <p id="ammaDialogue">
+
+                                അയ്യോ മോളേ,
+                                ഹൽവയും മത്തിക്കറിയും
+                                കൂടെയോ?!
+
+                            </p>
+
+
+                            <span class="quote end">
+                                ”
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             FUN FACTS
+        ================================== -->
+
+        <section id="about"
+            class="facts-section">
+
+
+            <h2>
+                🤔 Scientific Facts We Just Made Up
+            </h2>
+
+
+            <div class="facts">
+
+
+                <div class="fact-card">
+
+                    <div>
+                        🧠
+                    </div>
+
+                    <strong>
+                        0%
+                    </strong>
+
+                    <p>
+                        Science
+                    </p>
+
+                </div>
+
+
+
+                <div class="fact-card">
+
+                    <div>
+                        😂
+                    </div>
+
+                    <strong>
+                        100%
+                    </strong>
+
+                    <p>
+                        Useless
+                    </p>
+
+                </div>
+
+
+
+                <div class="fact-card">
+
+                    <div>
+                        👩‍🍳
+                    </div>
+
+                    <strong>
+                        99.9%
+                    </strong>
+
+                    <p>
+                        Amma Approved
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <p class="disclaimer">
+
+                *Amma certification may be completely fictional.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             FOOTER
+        ================================== -->
+
+        <footer>
+
+            <p>
+                Made with ❤️, questionable food choices
+                & Kerala vibes 🌴
+            </p>
+
+            <p>
+                © 2026 Halwa & Mathicurry
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
