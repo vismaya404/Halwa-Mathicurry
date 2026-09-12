@@ -54,6 +54,7 @@ Science has officially failed.
 
 ## Technologies/Components Used
 
+
 ### For Software:
 
 - HTML5
@@ -63,6 +64,10 @@ Science has officially failed.
 - VS Code
 - Git
 - GitHub
+
+# For Hardware:
+
+None 
 
 ### Tools Used:
 
